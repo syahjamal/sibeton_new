@@ -1,0 +1,20 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "@flutter-ecommerce-gqpfv.mongodb.net",
+        "port": 27017,
+        "database": "server",
+        "username": "AdminSibeton",
+        "password": "tigerhood212",
+        "srv": true
+      },
+      "options": {
+        "ssl": true
+      }
+    }
+  }
+}
