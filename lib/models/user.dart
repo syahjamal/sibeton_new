@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:meta/meta.dart';
 
 class User {
   String id;
@@ -12,13 +12,11 @@ class User {
       @required this.email,
       @required this.jwt});
 
-  factory User.fromJson(Map<String, dynamic> json){
+  factory User.fromJson(Map<String, dynamic> json) {
     return User(
-      id: json['id'],
-      username: json['username'],
-      email: json['email'],
-      jwt: json['jwt']
-
-    );
+        id: json['id'],
+        username: json['username'],
+        email: json['email'],
+        jwt: json['jwt']);
   }
 }

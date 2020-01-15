@@ -24,8 +24,7 @@ class MyApp extends StatelessWidget {
     return StoreProvider(
         store: store,
         child: MaterialApp(
-          debugShowCheckedModeBanner: false,
-            title: 'Sibeton E-Commerce',
+            title: 'Flutter E-Commerce',
             routes: {
               '/products': (BuildContext context) => ProductsPage(onInit: () {
                     StoreProvider.of<AppState>(context).dispatch(getUserAction);
@@ -34,12 +33,12 @@ class MyApp extends StatelessWidget {
               '/register': (BuildContext context) => RegisterPage()
             },
             theme: ThemeData(
-                brightness: Brightness.light,
-                primaryColor: Colors.red[800],
-                accentColor: Colors.deepOrange[300],
+                brightness: Brightness.dark,
+                primaryColor: Colors.cyan[400],
+                accentColor: Colors.deepOrange[200],
                 textTheme: TextTheme(
                     headline:
-                        TextStyle(fontSize: 62.0, fontWeight: FontWeight.bold),
+                        TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
                     title:
                         TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
                     body1: TextStyle(fontSize: 18.0))),
